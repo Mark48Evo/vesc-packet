@@ -1,3 +1,5 @@
+const crc16 = require('./crc16');
+
 const packetTypes = {
   COMM_FW_VERSION: 0,
   COMM_JUMP_TO_BOOTLOADER: 1,
@@ -100,5 +102,6 @@ const notRequiredResponsePacket = [
 module.exports = {
   packetTypes,
   packerTypeToString,
-  notRequiredResponsePacket
+  notRequiredResponsePacket,
+  crc16,
 };
